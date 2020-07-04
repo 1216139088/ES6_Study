@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coordinates</title>
+
+
+    <!--javascirpt-->
+    <script type="text/javascript">
+        function canvas_getCoordinates(e) {
+            x = e.clientX;
+            y = e.clientY;
+            document.getElementById("xy").innerHTML = ("Coordinates: (" + x + "," + y + ")");
+        }
+        function canvas_clearCoordinates() {
+            document.getElementById("xy").innerHTML = "";
+
+        }
+    </script>
+</head>
+
+
+<body>
+    <div id="" style="float:left;width:199px;height:99px;border:1px solid #c3c3c3"
+         onmousemove="canvas_getCoordinates(event)"
+         onmouseout="canvas_clearCoordinates()"></div>
+<div id="xy"></div>
+
+
+</body>
+</html>

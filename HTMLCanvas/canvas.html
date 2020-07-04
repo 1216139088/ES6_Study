@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<body>
+<h1>HTML5的canvas元素使用javaScript在网页上绘制图像</h1>
+
+<canvas id="mycanvas" width="200" height="100"></canvas>
+<script type="text/javascript">
+    var c = document.getElementById("mycanvas");
+    var cxt=c.getContext("2d");
+    cxt.fillStyle="#FF0000";
+    cxt.fillRect(50,50,150,75);
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>from_elements</title>
+</head>
+<body>
+<h1>HTML表单用于收集不同类型的用户输入</h1>
+<h2>文本输入</h2>
+<form action="../HTML/image.html" method="get">
+    First name:<br>
+    <input type="text" name="firstname" value="？？">
+    <br>
+    Last name：<br>
+    <input type="text" name ="lastname">
+    <hr>
+    <h2>单选按钮输入</h2>
+    <input type="radio" name="sex" value="male" checked>Male
+    <input type="radio" name="sex" value="male" >Female
+    <hr>
+    <h2>提交按钮</h2>
+    <input type="submit" name="submit" value="提交按钮">
+    <hr>
+    <h2>Action属性</h2>
+</form>
+<hr>
+<h1>新的表单</h1>
+<form action="/demo/demo_form.asp">
+    <fieldset>
+        <legend>个人信息表单</legend>
+        姓名：
+        <input type="text" name="name" value="fcw">
+        <br>
+        密码：
+        <input type="password" name="pw" value="321546"><br>
+        <input type="submit" value="登录" >
+        <input type="submit" value="登录2" >
+    </fieldset>
+</form>
+<hr>
+<h2>下拉元素</h2>
+<select name="car">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+</select>
+<hr>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<hr>
+<button type="button" onclick="alert('hello world')">点击</button>
+
+<hr>
+<h2>新的表单</h2>
+<form action="../HTML/image.html">
+    <input type="date">
+    <input type="datetime">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="month">
+    <input type="number">
+    <input type="range">
+    <input type="search">
+    <input type="tel">
+    <input type="tel">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+    <input list="b">
+    <datalist id="b">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+</form>
+<hr>
+<input type="number" name ="as" required>
+<hr>
+<input list="cars">
+<datalist id="cars">
+    <option value="asd">
+    <option value="asd2">2</option>
+    <option >3</option>
+</datalist>
+<input type="number" name="points" step="3">
+
+</body>
+</html>
