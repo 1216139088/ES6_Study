@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+</head>
+<body>
+<p id="p"></p>
+<script>
+    var person={firstName:"fcw",
+                lastName:"changwei",
+                sex:"flame",
+                phone:121613988,
+        get lang() {
+            return this.phone;
+        }
+    }
+    person.phone = 9088;
+    document.getElementById("p").innerHTML = person.lang;
+//计算器
+    var obj = {counter: 0};
+
+    Object.defineProperty(obj,"reset",{get :function () {
+            return this.counter = 0;
+        }})
+
+    Object.defineProperty(obj,"add",{set:function (value) {
+            return  this.counter+=9;
+
+        }})
+    console.log(obj.reset);
+    console.log(obj.add=10);
+
+//  js Call()方法
+    var a={
+        aa: function (id, name) {
+            return this.id + "--------" + this.name;
+        }
+    }
+    b = a.aa.apply(["1", "fcw"], ["2", "cqqq"]);
+    console.log(b)
+
+</script>
+
+
+</body>
+</html>
